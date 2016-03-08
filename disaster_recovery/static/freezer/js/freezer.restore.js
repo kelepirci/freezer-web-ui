@@ -19,7 +19,7 @@
 "use strict";
 
 var url = $(location).attr("origin");
-url += '/disaster_recovery/api/clients';
+url += '/horizon/disaster_recovery/api/clients';
 
 $.ajax({
     url: url,

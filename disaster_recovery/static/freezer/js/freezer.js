@@ -21,7 +21,7 @@
     angular.module('hz').controller('DestinationCtrl', function ($scope, $http, $location) {
         $scope.query = '';
 
-        $http.get($location.protocol() + "://" + $location.host() + ":" + $location.port() + "/disaster_recovery/api/clients").
+        $http.get($location.protocol() + "://" + $location.host() + ":" + $location.port() + "/horizon/disaster_recovery/api/clients").
             success(function (data) {
                 $scope.clients = data;
             });
